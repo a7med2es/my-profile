@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="shortcut icon" href="a7med.jpg" type="image/x-icon">
+    <script src="main.js"></script>
+    <title>contact</title>
+
+    <style>
+        .home {
+            background-image: url(a7med3.jpg);
+            background-position: left;
+            background-repeat: no-repeat;
+            border-radius: 60px;
+        }
+
+        body {
+            text-transform: capitalize;
+        }
+
+        .social-icons_contact a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 10rem;
+            height: 10rem;
+            background-color: transparent;
+            border: 0.2rem solid #4b50b7;
+            font-size: 5rem;
+            border-radius: 50%;
+            margin: 3rem 4rem 3rem 0;
+            transition: 0.3s ease;
+            color: #4b50b7;
+        }
+
+        .social-icons_contact a:hover {
+            color: black;
+            transform: scale(1.3) translateY(-5px);
+            background-color: #4b50b7;
+            box-shadow: 0 0 25px #4b50b7;
+        }
+
+        @keyframes cursor {
+            to {
+                border-left: 3px solid #4b50b7;
+            }
+        }
+
+        @keyframes words {
+
+            0%,
+            20% {
+                content: "linkedin";
+            }
+
+            21%,
+            40% {
+                content: "github";
+            }
+
+            41%,
+            60% {
+                content: "instagram";
+            }
+
+            61%,
+            80% {
+                content: "Email";
+            }
+
+            81%,
+            100% {
+                content: "Facebook";
+            }
+        }
+
+        .typing-textspan span::before {
+            content: "";
+            color: #4b50b7;
+            animation: words 20s infinite;
+        }
+
+
+
+        @media(max-width:995px) {
+            .home {
+                margin: 0;
+
+            }
+
+
+
+
+        }
+
+        @media(max-width:519px) {
+            .home-content {
+                margin-top: 90px;
+
+
+            }
+
+            .social-icons_contact i {
+                font-size: 34px;
+
+            }
+
+            .social-icons_contact a {
+                height: 60px;
+                width: 60px;
+            }
+
+
+
+
+        }
+
+        .log {
+            color: #4b50b7;
+        }
+
+
+        @media (max-width:373px) {
+
+            .home {
+                background-position: 200px;
+                background-size: cover;
+                background-position-x: 0px;
+                border-radius: 0;
+
+            }
+
+            .home .home-content h3 {
+                font-size: 2rem;
+            }
+
+            .home-content p {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo fas fa-user log"> a7med</a>
+
+        <nav>
+            <a href="index.html"> Home</a>
+            <a href="Services.html">Services</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Education.html">Education</a>
+            <a href="Experience.html">Experience</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <div class="sidebarcontainer">
+
+        <div class="active_open">
+        <button id="mainopen"class="mainopen" onclick="toggleNav()">&#9776;</button>
+        </div>
+
+        <div class="sidebar"id="sidebar" >
+            <ul class="nav_open">
+               <li> <a href="index.html" > Home</a></li>
+               <li> <a href="Services.html" >Services</a></li>
+               <li> <a href="Skills.html" class="active">Skills</a></li>
+               <li> <a href="Education.html" >Education</a></li>
+               <li> <a href="Experience.html" >Experience</a></li>
+               <li> <a href="contact.html" >Contact</a></li>
+            </ul>
+        </div>
+
+</div>
+
+    <section class="home">
+
+        <div class="home-content">
+            <h3 class="typing-textspan">contact me on <span></span></h3>
+            <p>Most of the time I am on telegram</p>
+
+            <br>
+            <div class="social-icons_contact">
+                <a href="https://www.linkedin.com/in/ahmed-essam-881382326/"><i
+                        class="fa-brands fa-linkedin icons"></i></a>
+                <a href="https://github.com/a7med2es"><i class="fa-brands fa-github icons"></i></a>
+
+                <a href="https://www.instagram.com/0aa_u?igsh=MWd5ZWkxZjhtaXVjYQ=="><i
+                        class="fa-brands fa-instagram icons"></i></a>
+
+                <a href="mailto:34asqf@gmail.com"><i class="fa-brands fa-m icons"></i></a>
+
+                <a href="https://t.me/a7_ess"><i class="fa-brands fa-telegram icons"></i></a>
+
+            </div>
+    </section>
+
+
+    <footer>
+        <a href="https://www.youtube.com/watch?v=be12BC5pQLE"><i class="fas fa-copyright"> by a7med</i></a>
+    </footer>
+</body>
+
+</html>
